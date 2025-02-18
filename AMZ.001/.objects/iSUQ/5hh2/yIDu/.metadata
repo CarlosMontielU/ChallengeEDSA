@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Amazon.com Moto G Power 5G  2024  Unlock",
+  "Type": "Screen",
+  "Id": "yIDuU_XTUU6kVOJEkAIG_w",
+  "Reference": "4S35o3SZK0i1fJxG3_Vqkw/yIDuU_XTUU6kVOJEkAIG_w",
+  "ParentRef": "4S35o3SZK0i1fJxG3_Vqkw/5hh26bAISkqsi9E1KSsfsA",
+  "Created": "2025-02-15T05:12:42.950523Z",
+  "Updated": "2025-02-15T05:12:42.950523Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "ShouldStop&Sequence_25"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "GetProductsList.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strProductsList&Sequence_2",
+        "jsonProductList&Sequence_2",
+        "arrayJsonProductList&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "outProductList"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "AmazonSetUp.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolOptionExists&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SearchProduct.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "intRatings&Sequence_2",
+        "strName&Sequence_2",
+        "strURL&Sequence_2",
+        "boolHasShip&Sequence_2",
+        "strRatings&Sequence_2",
+        "strDeliveryDate&Sequence_11",
+        "strProductPrice&Sequence_11",
+        "strShippingPrice&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strShipTo",
+        "in_strProductName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

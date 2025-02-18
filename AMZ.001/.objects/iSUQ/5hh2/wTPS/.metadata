@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Amazon.com  celular",
+  "Type": "Screen",
+  "Id": "wTPSkv2P8kmBFrq1oogyJA",
+  "Reference": "4S35o3SZK0i1fJxG3_Vqkw/wTPSkv2P8kmBFrq1oogyJA",
+  "ParentRef": "4S35o3SZK0i1fJxG3_Vqkw/5hh26bAISkqsi9E1KSsfsA",
+  "Created": "2025-02-15T01:42:48.3015388Z",
+  "Updated": "2025-02-15T01:42:48.3015388Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

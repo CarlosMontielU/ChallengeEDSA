@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="72cflmpWzUadoA5XnvJ6Pg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-8, -8, 1616, 886" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF5SURBVDhPlVM9S8NQFBW0+QOO2h+gU9vdSbuLNP0HprtDfoBIhYKgWFyFLLpUC10EjbvawcFC4qJDm4CDllQdHHq9JzdfbYLUA4e8d98959738t4cESnMA2afOSuQC40Cg31EkrBtm3Rdp4qqklqtkmEYwUoKDRi4MhZ0u12az+VoYYowzIALg6GMBVqt5gs2ymWyLCuaL+fzQcYEhikDx3H8LkzTpMt2299C2EUG0gbYf6FUikRJZiBtEFaECbo5bjb/ZxAm79Xr/nxb06KY53l+LIG0QaFYjAQ4yOQfQTdTCAy+HJkycIBLfOIQ4AtRhbe1zmajd5fGFt+J+x1hZNBZJfqwEPgbt1sifNwlOoM0NBjcEJ3z8I4XR3E3KXwOiF5aUqy1iEjiDF4vxAS8WpMqvUOiJ2bviKtvSlXkoSDWA4P4Kr89SCJMkMwcB1/qrPATupa8H/4bYHCVGxhNAC0+n8Yd9LliNvzHhOd8wvxGZEYglzWk/AJk0E1AkKBI3AAAAABJRU5ErkJggg==" Selector="&lt;html app='msedge.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,51FIeTurRAL.css,31fFxDf00KL.css,11j2+ObrspL.css,01qDClimA1L.css,01pOTCa2wPL.css,413Vvv3GONL.css,11TIuySqr6L.css,01Rw4F+QU6L.css,11JJsNcqOIL.css,01J3raiFJrL.css,01IdKcBuAdL.css,014QJx7nWq*' title='Amazon.com : celularcelular' /&gt;" Url="https://www.amazon.com/s?k=celularcelular&amp;crid=2IKP0124BV2&amp;sprefix=celularcelular%2Caps%2C181&amp;ref=nb_sb_noss" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="71abbddf2da87cf4915eab768e560b0c.jpg" xmlns="">0ZTsVALUNFUuDt7JlpIpQ3g</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>
