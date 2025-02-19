@@ -12,6 +12,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "dt_PriceFiltered&Sequence_40",
         "TransactionItem&StateMachine_1",
         "SystemException&StateMachine_1",
         "BusinessException&StateMachine_1",
@@ -26,6 +27,8 @@
         "ShouldStop&Sequence_25"
       ],
       "ArgumentsSectionElementsOrder": [
+        "in_intMinPrice",
+        "in_intMaxPrice",
         "in_OrchestratorQueueName",
         "in_OrchestratorQueueFolder"
       ],

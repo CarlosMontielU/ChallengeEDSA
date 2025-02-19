@@ -168,13 +168,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <WriteLine DisplayName="Log Start" sap:VirtualizedContainerService.HintSize="506,122" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="Start AmazonGetProductsList" />
-      <ui:FileExistsX DisplayName="File Exists" Exists="[boolPDFExists]" sap:VirtualizedContainerService.HintSize="506,165" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="[in_Config(&quot;InputPath&quot;).ToString+in_Config(&quot;InputProductFile&quot;).ToString]" />
-      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="506,122" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Check file exists in: &quot;+in_Config(&quot;InputPath&quot;).ToString+in_Config(&quot;InputProductFile&quot;).ToString+&quot; = &quot;+boolPDFExists.ToString]" />
-      <ui:FileExistsX DisplayName="File Exists" Exists="[boolExcelExists]" sap:VirtualizedContainerService.HintSize="506,165" sap2010:WorkflowViewState.IdRef="FileExistsX_2" Path="[in_Config(&quot;InputPath&quot;).ToString+in_Config(&quot;InputProductFileTransaction&quot;).ToString]" />
-      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="506,122" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;Check file exists in: &quot;+in_Config(&quot;InputPath&quot;).ToString+in_Config(&quot;InputProductFileTransaction&quot;).ToString+&quot; = &quot;+boolExcelExists.ToString]" />
-      <If Condition="[boolPDFExists and boolExcelExists]" sap:VirtualizedContainerService.HintSize="506,3466" sap2010:WorkflowViewState.IdRef="If_2">
+      <ui:FileExistsX DisplayName="File Exists PDF" Exists="[boolPDFExists]" sap:VirtualizedContainerService.HintSize="506,165" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="[in_Config(&quot;InputPath&quot;).ToString+in_Config(&quot;InputProductFile&quot;).ToString]" />
+      <WriteLine DisplayName="Log Exists PDF" sap:VirtualizedContainerService.HintSize="506,122" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Check file exists in: &quot;+in_Config(&quot;InputPath&quot;).ToString+in_Config(&quot;InputProductFile&quot;).ToString+&quot; = &quot;+boolPDFExists.ToString]" />
+      <ui:FileExistsX DisplayName="File Exists Excel" Exists="[boolExcelExists]" sap:VirtualizedContainerService.HintSize="506,165" sap2010:WorkflowViewState.IdRef="FileExistsX_2" Path="[in_Config(&quot;InputPath&quot;).ToString+in_Config(&quot;InputProductFileTransaction&quot;).ToString]" />
+      <WriteLine DisplayName="Log Exists Excel" sap:VirtualizedContainerService.HintSize="506,122" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;Check file exists in: &quot;+in_Config(&quot;InputPath&quot;).ToString+in_Config(&quot;InputProductFileTransaction&quot;).ToString+&quot; = &quot;+boolExcelExists.ToString]" />
+      <If Condition="[boolPDFExists and boolExcelExists]" DisplayName="If PDF and Excel Exists" sap:VirtualizedContainerService.HintSize="506,3466" sap2010:WorkflowViewState.IdRef="If_2">
         <If.Then>
-          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="504,3164" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <Sequence DisplayName="Then Move to TEMP" sap:VirtualizedContainerService.HintSize="504,3164" sap2010:WorkflowViewState.IdRef="Sequence_11">
             <Sequence.Variables>
               <Variable x:TypeArguments="s:String[]" Default="[{&quot;URL&quot;,&quot;Fecha de llegada&quot;,&quot;Precio producto&quot;,&quot;Precio delivery&quot;,&quot;Precio Impuesto de importacion&quot;,&quot;Precio total&quot;,&quot;Tabla Rating&quot;}]" Name="arrayColumnNames" />
             </Sequence.Variables>
@@ -183,8 +183,8 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:CopyFile ContinueOnError="{x:Null}" Destination="[in_Config(&quot;TempPath&quot;).ToString+in_Config(&quot;InputProductFile&quot;).ToString]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="470,186" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[in_Config(&quot;InputPath&quot;).ToString+in_Config(&quot;InputProductFile&quot;).ToString]" />
-            <ui:CopyFile ContinueOnError="{x:Null}" Destination="[in_Config(&quot;TempPath&quot;).ToString+in_Config(&quot;InputProductFileTransaction&quot;).ToString]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="470,186" sap2010:WorkflowViewState.IdRef="CopyFile_2" Overwrite="True" Path="[in_Config(&quot;InputPath&quot;).ToString+in_Config(&quot;InputProductFileTransaction&quot;).ToString]" />
+            <ui:CopyFile ContinueOnError="{x:Null}" Destination="[in_Config(&quot;TempPath&quot;).ToString+in_Config(&quot;InputProductFile&quot;).ToString]" DisplayName="Copy File PDF " sap:VirtualizedContainerService.HintSize="470,186" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[in_Config(&quot;InputPath&quot;).ToString+in_Config(&quot;InputProductFile&quot;).ToString]" />
+            <ui:CopyFile ContinueOnError="{x:Null}" Destination="[in_Config(&quot;TempPath&quot;).ToString+in_Config(&quot;InputProductFileTransaction&quot;).ToString]" DisplayName="Copy File Excel" sap:VirtualizedContainerService.HintSize="470,186" sap2010:WorkflowViewState.IdRef="CopyFile_2" Overwrite="True" Path="[in_Config(&quot;InputPath&quot;).ToString+in_Config(&quot;InputProductFileTransaction&quot;).ToString]" />
             <ui:ReadPDFText PreserveFormatting="{x:Null}" sap2010:Annotation.AnnotationText="Get product list pdf and get text" DisplayName="Read PDF Text Product List" FileName="[in_Config(&quot;TempPath&quot;).ToString+in_Config(&quot;InputProductFile&quot;).ToString]" sap:VirtualizedContainerService.HintSize="470,145" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[strProductsList]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">

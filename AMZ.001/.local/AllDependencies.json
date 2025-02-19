@@ -21195,9 +21195,9 @@
     "restore": {
       "projectUniqueName": "AMZ.001.ProductsInfoExtraction",
       "projectName": "AMZ.001.ProductsInfoExtraction",
-      "projectPath": "C:\\Users\\CarlosM\\Documents\\UiPath\\AMZ.001\\.local",
+      "projectPath": "C:\\Users\\CarlosM\\Desktop\\ChallengeEDSA\\AMZ.001\\.local",
       "packagesPath": "C:\\Users\\CarlosM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CarlosM\\Documents\\UiPath\\AMZ.001\\.local"
+      "outputPath": "C:\\Users\\CarlosM\\Desktop\\ChallengeEDSA\\AMZ.001\\.local"
     },
     "frameworks": {
       "net8.0-windows7.0": {
